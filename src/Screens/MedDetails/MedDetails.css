@@ -1,0 +1,110 @@
+.information-main-view {
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+
+.navigation-code {
+    margin: 20px 0;
+    padding: 24px;
+    width: fit-content;
+    height: fit-content;
+    justify-content: flex-start;
+}
+
+.information-code {
+    width: 50%;
+}
+
+.info-navigation-button {
+    margin: auto;
+    height: auto;
+    padding: 4px;
+    font-size: 1.3rem;
+    display: block;
+    color: rgb(60, 63, 60);
+    border: none;
+    background-color: none;
+    text-align: left;
+}
+
+.names-section {
+    width: 50%;
+}
+
+.top-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.med-name {
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #212121;
+    margin: 0;
+}
+
+.prescription-text {
+    font-size: 12px;
+    padding: 0 5px;
+    color: #000;
+}
+
+.property-heading {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #616161;
+    font-weight: 700;
+}
+
+.property-value {
+    color: #616161!important;
+    margin-top: -15px;
+}
+
+.image-carousel {
+    width: 50%;
+}
+
+.overview-text {
+    margin: 0;
+    font-size: 20px;
+    color: #616161;
+    font-weight: 700;
+}
+
+.additional-property-heading {
+    text-transform: uppercase;
+    color: #212121;
+    font-weight: 700;
+    padding-top: 16px;
+    margin: 0;
+    font-size: 14px;
+}
+
+.additional-property-value {
+    font-family: "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+.deals-code {
+    padding: 20px 10px;
+    width: 25%;
+}
+
+.add-to-cart-button {
+    border-radius: 4px;
+    height: auto;
+    background-color: #ff6f61;
+    color: #fff;
+    font-weight: 700;
+    padding: 11px 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}

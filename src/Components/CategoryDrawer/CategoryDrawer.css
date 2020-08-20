@@ -1,0 +1,40 @@
+.category-drawer-main{
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.category-drawer{
+    width: 80%;
+    overflow: hidden;
+}
+
+.category-section{
+    border: 1px solid grey;
+    border-radius: 15px;
+    margin: 30px 20px;
+    height: 250px;
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.47);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.47);
+    cursor: pointer;
+}
+
+.category-image{
+    height: 200px;
+    margin: 0px 50px;
+}
+
+.category-name{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px;
+}
+
+.category-slide-button{
+    border: none;
+    font-size: 20px;
+    height: 40px;
+    margin: auto;
+}
