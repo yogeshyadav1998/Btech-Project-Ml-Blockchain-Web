@@ -8,6 +8,7 @@ import { Router, Route, Switch } from "react-router-dom";
 import Landing from "./Screens/Landing/Landing";
 import FormulaResult from "./Screens/FormulaResult/FormulaResult";
 import MedDetails from "./Screens/MedDetails/MedDetails";
+// import AuthOptions from "./Screens/AuthOptions/AuthOptions";
 
 export default class App extends React.Component {
   render() {
@@ -16,11 +17,14 @@ export default class App extends React.Component {
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <Router history={history}>
+            <div>
             <Switch>
               <Route exact path="/" component={Landing} />
               <Route path='/formula-result' component={FormulaResult}/>
               <Route path='/medicine-detail' component={MedDetails}/>
+              {/* <Route path='/auth-options' component= {AuthOptions}/> */}
             </Switch>
+            </div>
           </Router>
         </PersistGate>
       </Provider>

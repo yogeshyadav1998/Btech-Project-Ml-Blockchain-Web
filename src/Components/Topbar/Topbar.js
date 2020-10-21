@@ -98,8 +98,7 @@ export default () => {
             </Row>
             <Row className="topbar-second-row">
                 <Row className="topbar-top-row">
-                    <Button type="text" style={{ color: 'rgb(255 255 255)', background: '#ffffff14' }}>Login</Button>
-                    <Button type="text" style={{ color: 'rgb(255 255 255)', background: '#ffffff14' }}>Sign Up</Button>
+                    <Button type="text" style={{ color: 'rgb(255 255 255)', background: '#ffffff14' }} onClick= {()=> history.push('/auth-options')}>Signin Signup</Button>
                     <Button type="dashed" icon={<PhoneOutlined />} style={{ color: 'rgb(255 255 255)', background: '#ffffff14', borderColor: 'rgb(255 255 255)' }}>Assitance</Button>
                 </Row>
                 <Row className="topbar-second-bottom-row">

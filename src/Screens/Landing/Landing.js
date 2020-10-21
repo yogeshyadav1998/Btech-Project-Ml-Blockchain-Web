@@ -3,11 +3,13 @@ import './Landing.css';
 import { Row, Carousel } from 'antd';
 import Topbar from '../../Components/Topbar/Topbar';
 import CategoryDrawer from '../../Components/CategoryDrawer/CategoryDrawer';
+import About from '../../Components/About/about';
 const revitalCarouselItem = require('../../Assets/LandingAssets/revitalCarouselItem.jpg');
 const celevidaCarouselItem = require('../../Assets/LandingAssets/celevidaCarouselItem.jpeg');
 const johnsonCarouselItem = require('../../Assets/LandingAssets/johnsonCarouselItem.jpg');
 const dettolCarouselItem = require('../../Assets/LandingAssets/dettolCarouselItem.jpg');
 const daburCarouselItem = require('../../Assets/LandingAssets/daburCarouselItem.jpg');
+
 const Landing = () => {
     return (
         <Row className="landing-main-container">
@@ -31,8 +33,9 @@ const Landing = () => {
             </Carousel>
             <p className="category-heading">SHOP BY CATEGORY</p>
             <CategoryDrawer/>
+            <About/>
         </Row>
     )
 }
 
-export default Landing
+export default Landing;
