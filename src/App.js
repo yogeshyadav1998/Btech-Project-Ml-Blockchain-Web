@@ -22,7 +22,7 @@ export default class App extends React.Component {
               <Route exact path="/" component={Landing} />
               <Route path='/formula-result' component={FormulaResult}/>
               <Route path='/medicine-detail' component={MedDetails}/>
-              {/* <Route path='/auth-options' component= {AuthOptions}/> */}
+              <Route path='/auth-options' component={MedDetails}/>
             </Switch>
             </div>
           </Router>

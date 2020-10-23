@@ -22,7 +22,7 @@ export default () => {
     const [cityValue, setCityValue] = useState('');
     const [drugValue, setDrugValue] = useState('');
     useEffect(() => {
-        dispatch(getAllSatls())
+        // dispatch(getAllSatls())
         setDrugOptions(all_salts_medicines);
         // eslint-disable-next-line
     }, [])
@@ -98,12 +98,11 @@ export default () => {
             </Row>
             <Row className="topbar-second-row">
                 <Row className="topbar-top-row">
-                    <Button type="text" style={{ color: 'rgb(255 255 255)', background: '#ffffff14' }} onClick= {()=> history.push('/auth-options')}>Signin Signup</Button>
-                    <Button type="dashed" icon={<PhoneOutlined />} style={{ color: 'rgb(255 255 255)', background: '#ffffff14', borderColor: 'rgb(255 255 255)' }}>Assitance</Button>
+                    <Button type="text" style={{ color: 'rgb(255 255 255)', background: '#ffffff14' }} onClick= {()=> history.push('/auth-options')}>Signin / Signup</Button>
+                    <Button type="dashed" icon={<ShoppingCartOutlined />} style={{ color: 'rgb(255 255 255)', background: '#ffffff14' }}>Cart</Button>
                 </Row>
                 <Row className="topbar-second-bottom-row">
-                    <Button style={{ color: 'rgb(255 255 255)', background: '#ffffff14' }}>Upload Prescription</Button>
-                    <Button type="text" icon={<ShoppingCartOutlined />} style={{ color: 'rgb(255 255 255)', background: '#ffffff14' }}>Cart</Button>
+                    <Button style={{ color: 'rgb(255 255 255)', background: '#ffffff14' , margin: "auto"}}>Donate</Button>
                 </Row>
             </Row>
         </Row>

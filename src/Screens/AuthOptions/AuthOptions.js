@@ -1,41 +1,42 @@
 import React, {Component} from 'react';
 import { Radio } from 'antd';
-import './AuthOptions.css'
+import './AuthOptions.css';
 
 class AuthOptions extends Component {
 
-    state = {
-        value: 1,
-      };
+    // state = {
+    //     value: 1,
+    //   };
 
-	componentDidMount() {
+	// componentDidMount() {
 
-		const signUpButton = document.getElementById('signUp');
-		const signInButton = document.getElementById('signIn');
-		const container = document.getElementById('container');
+	// 	const signUpButton = document.getElementById('signUp');
+	// 	const signInButton = document.getElementById('signIn');
+	// 	const container = document.getElementById('container');
 
-		signUpButton.addEventListener('click', () => {
-			container.classList.add("right-panel-active");
-		});
+	// 	signUpButton.addEventListener('click', () => {
+	// 		container.classList.add("right-panel-active");
+	// 	});
 
-		signInButton.addEventListener('click', () => {
-			container.classList.remove("right-panel-active");
-		});
+	// 	signInButton.addEventListener('click', () => {
+	// 		container.classList.remove("right-panel-active");
+	// 	});
 
-    }
+    // }
     
     
     
-    onChange = e => {
-        console.log('radio checked', e.target.value);
-        this.setState({
-          value: e.target.value,
-        });
-      };
+    // onChange = e => {
+    //     console.log('radio checked', e.target.value);
+    //     this.setState({
+    //       value: e.target.value,
+    //     });
+    //   };
 
 	render() {
 		return (
-				<div class="container" id="container">
+            <div>
+				{/* <div class="container" id="container">
 					<div class="form-container sign-up-container">
 						<form action="#">
 							<h1>Create Account</h1>
@@ -80,7 +81,8 @@ class AuthOptions extends Component {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
+                </div>
 			);
 	}
 }

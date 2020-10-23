@@ -1,4 +1,36 @@
 .about-main-container{
+    height: 140vh;
+    margin-bottom: 10vh;
+}
+
+.wave-image{
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 10vh;
+}
+
+.grid{
     height: 50vh;
-    background-color: tomato;
+    width: 100%;
+}
+
+.heading53{
+    position: absolute;
+    top: 20%;
+    margin: 25px 30px;
+    font-family: 'Helvetica Now',sans-serif;
+    color: #3a265c;
+    font-size: 44px;
+    line-height: 53px;
+    font-weight: 700
+}
+
+.heading54{
+    position: absolute;
+    margin: 0px 30px;
+    top: 50%;
+    color: #3a265c;
+    font-size: 24px;
+    line-height: 35px;
+    font-family: 'Helvetica Now',sans-serif;
 }
