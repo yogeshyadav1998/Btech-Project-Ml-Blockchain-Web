@@ -6,6 +6,7 @@ import { Drawer, Button, Tabs, Row, Radio, Checkbox, Divider, Card, Typography, 
 import { FilterOutlined, ExperimentOutlined, MedicineBoxOutlined } from "@ant-design/icons";
 import Topbar from "../../Components/Topbar/Topbar";
 import { getFilteredSalts } from "../../Actions/singlemedAction";
+import Footer from "./../../Components/Footer/footer";
 const { Text } = Typography;
 const { TabPane } = Tabs;
 let filterData = { sortby: [], brand: [], productForm: [], dosage: [], prescription: [] }
@@ -209,6 +210,7 @@ const FormulaResult = () => {
                     </Row>
                 </Row>
             </Row>
+            <Footer/>
         </Row>
     )
 };

@@ -1,0 +1,20 @@
+.phase2{
+    display: block;
+    height: 100vh;
+    width: 100%;
+    margin: 10vh 0vh;
+}
+
+.square{
+    height: 60vh;
+    width: 40vh;
+    margin-top: 15vh;
+    margin-left: 30vh;
+    margin-bottom: 20vh;
+    border-radius: 10;
+}
+
+.text{
+    margin: 15vh 5vh ;
+    text-align: center;
+}

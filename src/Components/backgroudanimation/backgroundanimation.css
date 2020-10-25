@@ -1,0 +1,6 @@
+.background_circle{
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    z-index: 0;
+}

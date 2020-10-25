@@ -4,6 +4,7 @@ import { Row, Carousel } from 'antd';
 import Topbar from '../../Components/Topbar/Topbar';
 import CategoryDrawer from '../../Components/CategoryDrawer/CategoryDrawer';
 import About from '../../Components/About/about';
+import BookDoctor from '../../Components/BookDoctor/BookDoctor';
 import Footer from '../../Components/Footer/footer';
 
 const revitalCarouselItem = require('../../Assets/LandingAssets/revitalCarouselItem.jpg');
@@ -36,6 +37,7 @@ const Landing = () => {
             <p className="category-heading">SHOP BY CATEGORY</p>
             <CategoryDrawer/>
             <About/>
+            <BookDoctor/>
             <Footer/>
         </Row>
     )

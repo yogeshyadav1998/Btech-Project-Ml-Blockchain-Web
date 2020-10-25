@@ -5,6 +5,7 @@ import TopBar from '../../Components/Topbar/Topbar';
 import { useSelector, useDispatch } from 'react-redux';
 import { Row, Col, Carousel, Button, Radio } from 'antd';
 import { Link, animateScroll as scroll } from "react-scroll";
+import Footer from "./../../Components/Footer/footer";
 const img1 = require('../../Assets/MedDetail/strip.svg');
 const img2 = require('../../Assets/MedDetail/syrup.svg');
 const img3 = require('../../Assets/MedDetail/tablet_capsule.svg');
@@ -75,6 +76,7 @@ export default (props) => {
                     <Button className="add-to-cart-button">ADD TO CART </Button>
                 </Col>
             </Row>
+            <Footer/>
         </Row>
     )
 }
