@@ -14,7 +14,28 @@
     border-radius: 10;
 }
 
-.text{
+.booking_items{
+    display: flex;
+    flex-direction: column;
     margin: 15vh 5vh ;
     text-align: center;
+}
+
+.track_items{
+    display: flex;
+    flex-direction: column;
+    margin: 15vh 5vh ;
+    text-align: center;
+}
+
+.book_heading{
+    color: tomato;
+    font-size: 5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.track_heading{
+    color: tomato;
+    font-size: 5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }

@@ -15,9 +15,9 @@
     border-radius: 15px;
     margin: 30px 20px;
     height: 250px;
-    -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.47);
-    -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.47);
-    box-shadow: 10px 10px 20px 0px rgba(173, 168, 168, 0.47);
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.47);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 10px 0px rgba(128, 123, 123, 0.47);
     cursor: pointer;
 }
 
@@ -35,6 +35,7 @@
 
 .category-slide-button{
     border: none;
+    background-color: white;
     font-size: 20px;
     height: 40px;
     margin: auto;
