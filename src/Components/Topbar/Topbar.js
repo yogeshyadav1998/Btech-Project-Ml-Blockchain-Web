@@ -23,7 +23,7 @@ export default () => {
     const [drugValue, setDrugValue] = useState('');
     useEffect(() => {
         // dispatch(getAllSatls())
-        setDrugOptions(all_salts_medicines);
+        // setDrugOptions(all_salts_medicines);
         // eslint-disable-next-line
     }, [])
     const onCitySearch = searchText => {

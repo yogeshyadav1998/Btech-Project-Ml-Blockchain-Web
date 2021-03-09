@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kidney Disease Prediction</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="login">
+    <h1>Chronic Kidney Disease Prediction</h1>
+
+    <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}" method="post">
+      <input type="text" name="Age" placeholder="Age(in years)" required="required" />
+      <input type="text" name="Blood Pressure" placeholder="Blood Pressure(in mm/Hg)" required="required" />
+      <input type="text" name="Specific Gravity" placeholder="Specific Gravity(1.005/1.010/1.015/1.020/1.025)" required="required" />
+      <input type="text" name="Albumin" placeholder="Albumin level(0/1/2/3/4/5)" required="required" />
+      <input type="text" name="Sugar" placeholder="Sugar level(0/1/2/3/4/5)" required="required" />
+      <input type="text" name="Red Blood Cells" placeholder="RBCs(0-abnormal,1-normal)" required="required" />
+      <input type="text" name="Pus Cell" placeholder="Pus Cell(0-abnormal,1-normal)" required="required" />
+      <input type="text" name="Pus Cells Clumps" placeholder="Pus Cell Clumps(0-notpresent,1-present)" required="required" />
+      <input type="text" name="Bacteria" placeholder="Bacteria(0-notpresent,1-present)" required="required" />
+      <input type="text" name="Blood Glucose Random" placeholder="Blood Glucose Random(mgs/dl)" required="required" />
+      <input type="text" name="Blood Urea" placeholder="Blood Urea(mgs/dl)" required="required" />
+      <input type="text" name="Serum Creatinine" placeholder="Sugar Creatinine(mgs/dl)" required="required" />
+      <input type="text" name="Sodium" placeholder="Sodium(in mEq/L)" required="required" />
+      <input type="text" name="Potassium" placeholder="Potassuim(in mEq/L)" required="required" />
+      <input type="text" name="Haemoglobin" placeholder="Haemoglobin(in gms)" required="required" />
+      <input type="text" name="Packed Cell Volume" placeholder="Packed Cell Volume" required="required" />
+      <input type="text" name="White Blood Cell Count" placeholder="WBCs Count(in millions/cmm)" required="required" />
+      <input type="text" name="Red Blood Cell Count" placeholder="RBCs Count(in millions/cmm)" required="required" />
+      <input type="text" name="Hypertension" placeholder="Hypertension(0-no,1-yes)" required="required" />
+      <input type="text" name="Diabetes Mellitus" placeholder="Diabetes Mellitus(0-no,1-yes)" required="required" />
+      <input type="text" name="Coronary Artery Disease" placeholder="Coronary Artery Disease(0-no,1-yes)" required="required" />
+      <input type="text" name="Appetite" placeholder="Appetite(0-poor,1-good)" required="required" />
+      <input type="text" name="Pedal Edema" placeholder="Pedal Edema(0-no,1-yes)" required="required" />
+      <input type="text" name="Anaemia" placeholder="Anaemia(0-no,1-yes)" required="required" />
+      <button type="submit" class="predict_button">Predict</button>
+    </form>
+
+  </div>
+
+
+</body>
+
+</html>

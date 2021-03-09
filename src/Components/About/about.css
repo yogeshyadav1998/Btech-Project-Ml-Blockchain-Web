@@ -38,3 +38,18 @@
     width: 50%;
     margin: 10px auto;
 }
+
+.report_button{
+    width: 30%;
+    margin: 10px auto;
+}
+
+.services_heading{
+    margin: 5vh auto;
+    font-size: 5vh;
+    color: black;
+    -webkit-text-fill-color: rgb(233, 144, 144); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+}

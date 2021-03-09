@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Row, Col, Button} from 'antd';
-import { SearchOutlined, UploadOutlined} from '@ant-design/icons'
+import { SearchOutlined, UploadOutlined, RightOutlined} from '@ant-design/icons'
 import './about.css'
 
 
@@ -11,6 +11,7 @@ class about extends Component {
                 <Row>
                     <img className="wave-image"  src="https://cdn2.f-cdn.com/contestentries/950414/17591332/58a03f1146064_thumb900.jpg"/>
                 </Row>
+                <h1 className="services_heading">Services</h1>
                 <Row>
                     <Col md={8} offset={4}>
                         <div className="grid">
@@ -37,8 +38,12 @@ class about extends Component {
                     </Col>
                     <Col md={8}>
                         <div className="grid">
-                            <p className="heading53">Report Analysis</p>
-                            <p className="heading54">Get daily personalized meal plans. Know exactly what to eat and when.</p>
+                            <p className="heading53">Analyse Reports </p>
+                            <Button className="report_button" type="primary" >Cancer <RightOutlined /></Button>
+                            <Button className="report_button" type="primary" >Diabetes <RightOutlined /></Button>
+                            <Button className="report_button" type="primary" >Parkinsons<RightOutlined /></Button>
+                            <Button className="report_button" type="primary" >Kidney <RightOutlined /></Button>
+                            <Button className="report_button" type="primary" >Heart <RightOutlined /></Button>
                         </div>
                     </Col>
                 </Row>

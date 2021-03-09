@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Diabetes Prediction</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="login">
+    <h1>Diabetes Analysis</h1>
+
+    <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}" method="post">
+      <input type="text" name="Number of Times Pregnant" placeholder="Number of times Pregnant  " required="required" />
+      <input type="text" name='Plasma Glucose Concentration' placeholder="Plasma Glucose Concentration" requires="required" />
+      <input type="text" name="Diastolic Blood Pressure" placeholder="Diastolic Blood Pressure(in mm Hg)" required="required" />
+      <input type="text" name="Triceps Skin Fold Thickness" placeholder="Triceps Skin Fold Thickness(in mm)" required="required" />
+      <input type="text" name="2-Hour Serum Insulin" placeholder="2-Hour Serum insulin(in mu U/ml)" required="required" />
+      <input type="text" name="BMI" placeholder="Body Mass Index(BMI)-(weight(in kg)/(height(in m))^2)" required="required" />
+      <input type="text" name="Diabetes Pedigree Function" placeholder="Diabetes Pedigree Function" required="required" />
+      <input type="text" name="Age(in Years)" placeholder="Age(in Years)" required="required" />
+
+      <button type="submit" class="predict_button">Predict</button>
+    </form>
+
+  </div>
+
+
+</body>
+
+</html>

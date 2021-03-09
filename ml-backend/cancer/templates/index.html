@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Cancer Prediction</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="style.css">
+  
+  
+</head>
+
+<body>
+ <div class="login">
+  <h1>Cancer Prediction</h1>
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="radius" placeholder="Radius(Mean of distances from centre to points on the perimeter)" required="required" />
+        <input type="text" name="texture" placeholder="Texture(Standard deviation of grey-scale values)" required="required" />
+        <input type="text" name="perimeter" placeholder="Perimeter" required="required" />
+        <input type="text" name="area_mean" placeholder="Area_mean" required="required" />
+        <input type="text" name="smoothness" placeholder="Smoothness(local variation in radius lengths)" required="required" />
+        <input type="text" name="compactness" placeholder="Compactness(perimeter²/area )" required="required" />
+        <input type="text" name="concavity" placeholder="Concavity((severity of concave portions of the contour))" required="required" />
+        <input type="text" name="concave points mean" placeholder="Concave points mean((number of concave portions of the contour))" required="required" />
+        <input type="text" name="symmetry" placeholder="Symmetry" required="required" />
+        <input type="text" name="fractional dimensionmean" placeholder="Fractal dimension" required="required" />
+        <button type="submit" class="predict_button" onclick="myFunction()">Predict</button>
+    </form>
+ </div>
+
+ <script>
+  function myFunction() {
+    alert({prediction_text});
+  }
+  </script>
+
+</body>
+</html>

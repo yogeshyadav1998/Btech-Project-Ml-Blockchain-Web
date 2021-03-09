@@ -84,6 +84,18 @@ app.get('/api/wallet-info',(req, res)=>{
     });
 });
 
+app.post('/api/make-booking',(req, res)=>{
+    const { startTime, date, doctor, location} = req.body;
+
+    const amount = parseInt(amountstring);
+    createbooking(startTime,date,doctor,location);
+});
+
+app.get('/api/track-booking',(req, res)=>{
+    const trackID = req.body;
+    showUpdates(trackID)
+});
+
 const syncWithRootState = () =>{
     request({url: ROOT_NODE_ADDRESS + '/api/blocks'},(error, response, body)=>{
         if(!error && response.statusCode === 200){

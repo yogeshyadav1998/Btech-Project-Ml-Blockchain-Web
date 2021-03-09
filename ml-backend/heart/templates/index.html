@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Heart Disease Prediction</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="login">
+    <h1>Heart Disease Prediction</h1>
+    <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}" method="post">
+      <input type="text" name="Age" placeholder="Age(in years)" required="required" />
+      <input type="text" name="Sex" placeholder="Gender(1-male,0-female)" required="required" />
+      <input type="text" name="Chest Pain Type" placeholder="Chest Pain Type(1-typical,2-atypical,3-non-anginal,4-asymptotic" required="required" />
+      <input type="text" name="Resting Blood Pressure" placeholder="Resting Blood Pressure(in mm Hg)" required="required" />
+      <input type="text" name="Serum Cholestrol" placeholder="Serum Cholestrol(in mg/dl)" required="required" />
+      <input type="text" name="Fasting Blood Sugar" placeholder="Fasting Blood Sugar(1-(>120mg/dl),0-(<120mg/dl))" required="required" />
+      <input type="text" name="Resting ECG" placeholder="Resting ECG(0-normal,1-ST-T wave abnormality,2-left ventricular hypertrophy)" required="required" />
+      <input type="text" name="Maximum Heart Rate Achieved" placeholder="Maximum Heart Rate Achieved" required="required" />
+      <input type="text" name="Exercise Induced Angina" placeholder="Exercise Induced Angina(1-yes,0-no)" required="required" />
+      <input type="text" name="ST depression induced by exercise" placeholder="ST Depression induced by exercise relative to rest" required="required" />
+      <input type="text" name="Peak Exercise ST segment" placeholder="Peak Exercise ST segment(1-upsloping,2-flat,3=downsloping)" required="required" />
+      <input type="text" name="Number of Major Vessels" placeholder="Number of Major Vessels(0/1/2/3)" required="required" />
+      <input type="text" name="Thaleassemia" placeholder="Thalassemia(3-normal,6-fixed defect,7-reversible defect)" required="required" />
+      <button type="submit" class="predict_button">Predict</button>
+    </form>
+  </div>
+
+
+</body>
+
+</html>
